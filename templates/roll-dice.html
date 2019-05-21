@@ -1,0 +1,21 @@
+<!doctype html5>
+<html>
+    <head>
+        <title>My Random Number Generator</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Random Number Generator</h1>
+        <br />
+        <p class='invert-colors'>{{number}}</p>
+        <br />
+        <!-- I could not get the following to work: -->
+        <h2>Your die rolls:</h2>
+        <ul>
+            {% for roll in rolls %}
+            <li>{{ roll }}</li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
